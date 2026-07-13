@@ -164,7 +164,7 @@ board\_build.partitions \= huge\_app.csv
 
 ### **1\. Clone Repository**
 
-git clone https://github.com/yourusername/ESP32-LightControl-WiFi.git  
+git clone https://github.com/sgPhilia/ESP32-LightControl-WiFi  
 cd ESP32-LightControl-WiFi
 
 ### **2\. Open Project**
