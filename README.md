@@ -15,10 +15,6 @@ ESP32-LightControl-WiFi/
 ├── src/  
 │   └── main.cpp  
 │  
-├── assets/  
-│   ├── esp32.png  
-│   └── relay.png  
-│  
 ├── platformio.ini  
 │  
 └── README.md
