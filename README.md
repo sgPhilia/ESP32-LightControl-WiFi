@@ -76,50 +76,17 @@ ESP32-LightControl-WiFi/
 
 ### **System Flow**
 
-+---------------------------+
-|        ESP32 Boot         |
-+---------------------------+
-             |
-             v
-+---------------------------+
-|  Initialize Relay GPIO    |
-+---------------------------+
-             |
-             v
-+---------------------------+
-| Create WiFi Access Point  |
-+---------------------------+
-             |
-             v
-+---------------------------+
-| Start HTTP Web Server     |
-+---------------------------+
-             |
-             v
-+---------------------------+
-| User Connects to ESP32    |
-| WiFi Network              |
-+---------------------------+
-             |
-             v
-+---------------------------+
-| Open Web Interface        |
-+---------------------------+
-             |
-             v
-+---------------------------+
-| Send ON/OFF Request       |
-+---------------------------+
-             |
-             v
-+---------------------------+
-| ESP32 Controls Relay      |
-+---------------------------+
-             |
-             v
-+---------------------------+
-| Lamp Turns ON/OFF         |
-+---------------------------+
+```mermaid
+flowchart TD
+    A[ESP32 Boot] --> B[Initialize Relay GPIO]
+    B --> C[Create WiFi Access Point]
+    C --> D[Start HTTP Web Server]
+    D --> E[User Connects to ESP32 WiFi]
+    E --> F[Open Web Interface]
+    F --> G[Send ON/OFF Request]
+    G --> H[ESP32 Controls Relay]
+    H --> I[Lamp Turns ON/OFF]
+```
 
 ### **WiFi Control**
 
