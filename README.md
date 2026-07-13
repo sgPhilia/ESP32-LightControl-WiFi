@@ -214,14 +214,4 @@ The ESP32 hosts simple HTTP endpoints that allow you to programmatically control
 | /on | GET | Set GPIO23 HIGH to turn the relay **ON** |
 | /off | GET | Set GPIO23 LOW to turn the relay **OFF** |
 
-## **Future Enhancements**
-
-* \[ \] Build a cross-platform mobile application.  
-* \[ \] Add password authentication for the web control interface.  
-* \[ \] Support multiple relay channels for controlling multiple appliances.  
-* \[ \] Integrate MQTT to support IoT platforms like Home Assistant.  
-* \[ \] Implement OTA (Over-The-Air) firmware updates.  
-* \[ \] Add real-time relay status feedback.  
-* \[ \] Add automated timer and scheduling systems.
-
 *Created with: ESP32 \+ Relay Module \+ PlatformIO \+ Arduino Framework*
