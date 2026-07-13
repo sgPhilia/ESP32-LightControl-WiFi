@@ -76,31 +76,50 @@ ESP32-LightControl-WiFi/
 
 ### **System Flow**
 
-       ESP32 Boot  
-            │  
-            ▼  
-  Initialize Relay GPIO  
-            │  
-            ▼  
- Create WiFi Access Point  
-            │  
-            ▼  
-  Start HTTP Web Server  
-            │  
-            ▼  
-User Connects to ESP32 WiFi  
-            │  
-            ▼  
-    Open Web Interface  
-            │  
-            ▼  
-   Send ON/OFF Request  
-            │  
-            ▼  
-   ESP32 Controls Relay  
-            │  
-            ▼  
-    Lamp Turns ON/OFF
++---------------------------+
+|        ESP32 Boot         |
++---------------------------+
+             |
+             v
++---------------------------+
+|  Initialize Relay GPIO    |
++---------------------------+
+             |
+             v
++---------------------------+
+| Create WiFi Access Point  |
++---------------------------+
+             |
+             v
++---------------------------+
+| Start HTTP Web Server     |
++---------------------------+
+             |
+             v
++---------------------------+
+| User Connects to ESP32    |
+| WiFi Network              |
++---------------------------+
+             |
+             v
++---------------------------+
+| Open Web Interface        |
++---------------------------+
+             |
+             v
++---------------------------+
+| Send ON/OFF Request       |
++---------------------------+
+             |
+             v
++---------------------------+
+| ESP32 Controls Relay      |
++---------------------------+
+             |
+             v
++---------------------------+
+| Lamp Turns ON/OFF         |
++---------------------------+
 
 ### **WiFi Control**
 
